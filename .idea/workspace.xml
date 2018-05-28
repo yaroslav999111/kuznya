@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a5ac74e6-9be4-4d57-8e07-4efb056fb76c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.angular-cli.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/e2e/app.e2e-spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/e2e/app.po.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/protractor.conf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/avatar.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/info-all-ico.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/logos.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/my-project-ico.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth-guard.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/services/login.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/tsconfig.app.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/tsconfig.spec.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/typings.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>реги</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/pages/people/people.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/pages/people/people.component.html" />
+        <option value="$PROJECT_DIR$/src/app/registration/registration.component.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\fugel\Desktop\kuznya\kuznya\node_modules\tslint" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5ac74e6-9be4-4d57-8e07-4efb056fb76c" name="Default" comment="" />
+      <created>1527521300617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527521300617</updated>
+      <workItem from="1527521303105" duration="2221000" />
+      <workItem from="1527524234316" duration="37000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2258000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/pages/casts/casts.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/news/news.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/people/people.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/projects/projects.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/projects/projects.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/people/people.component.html" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/rental/rental.component.css" />
+    <entry file="file://$PROJECT_DIR$/src/app/pages/people/people.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/registration/registration.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/app/registration/registration.component.html" />
+  </component>
+</project>

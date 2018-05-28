@@ -11,7 +11,7 @@ import {RegistrationComponent} from "./registration/registration.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'people', pathMatch: 'full'},
-  { path: 'login',component: LoginComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'registration', component: RegistrationComponent},
   { path: 'people', component: PeopleComponent },
   { path: 'projects', component: ProjectsComponent },
