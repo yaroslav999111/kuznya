@@ -12,7 +12,7 @@ import {SeparatePeopleComponent} from "./pages/people/separate-people/separate-p
 import {MainpageComponent} from "./mainpage/mainpage.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'people', pathMatch: 'full'},
+  { path: '', redirectTo: 'main', pathMatch: 'full'},
   { path: 'login', component: LoginComponent},
   { path: 'registration', component: RegistrationComponent},
   { path: 'people', component: PeopleComponent },

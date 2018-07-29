@@ -258,3 +258,21 @@ body {padding: 0px;
   color: #f6f6f6;
   margin-top: 6px;}
 .div-login a {text-decoration: none;}
+
+/* Главная станица */
+.main-left-info, .main-right-info {
+  background: #fff;
+  width: 47.5%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;}
+.main-left-info span, .main-right-info span {
+  font-weight: 600;
+  color: #696969;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+.main-left-info p {font-size: 15px;}

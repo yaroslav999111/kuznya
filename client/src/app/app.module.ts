@@ -14,6 +14,7 @@ import {LoginService} from "../services/login.service";
 import {AuthService} from "../services/auth.service";
 import { SeparatePeopleComponent } from './pages/people/separate-people/separate-people.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -32,7 +33,9 @@ import { MainpageComponent } from './mainpage/mainpage.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [LoginService, AuthService],
   bootstrap: [AppComponent]

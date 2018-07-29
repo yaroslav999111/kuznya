@@ -1,13 +1,17 @@
 <div class="main">
   <div class="container">
-    <div class="div-login">
+    <div class="div-login" *ngIf="!correctLogin">
       <img src="../../assets/imgs/login.png">
-      <form>
-        <input type="text" name="1" placeholder="Email">
-        <input type="text" name="2" placeholder="Пароль">
-        <input type="submit" name="" value="Вход">
-        <a href="#">Регистрация</a>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="email"  placeholder="Email">
+        <input formControlName="password" class="password-in" type="password" placeholder="Пароль">
+        <div class="right-value" *ngIf="correctForm"><span>Пожалуйста, введите Ваши данные верно</span></div>
+        <input type="submit" class="btn-submit" value="Вход">
+        <a routerLink="/registration">Регистрация</a>
       </form>
+    </div>
+    <div class="success" *ngIf="correctLogin">
+     <span>Отлично, вы ввели верные данные!</span>
     </div>
   </div>
 </div>
