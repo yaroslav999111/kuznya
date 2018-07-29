@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
     email: new FormControl(''),
     password: new FormControl(''),
   });
+
   constructor() {
   }
 

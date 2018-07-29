@@ -259,7 +259,16 @@ body {padding: 0px;
   margin-top: 6px;}
 .div-login a {text-decoration: none;}
 
-
+.email__input {
+  width: 97%;
+  background: #ffffff;
+  padding: 3px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-top: 6px;
+}
 /* Страница регистрации */
 .registration {width: 300px;    margin: auto;text-align: center;min-height: 500px;}
 .registration img{ width: 100%; }
