@@ -15,6 +15,7 @@ import {AuthService} from "../services/auth.service";
 import { SeparatePeopleComponent } from './pages/people/separate-people/separate-people.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NewsOneComponent } from './pages/news-one/news-one.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     RentalComponent,
     RegistrationComponent,
     SeparatePeopleComponent,
-    MainpageComponent
+    MainpageComponent,
+    NewsOneComponent
   ],
   imports: [
     BrowserModule,

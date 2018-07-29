@@ -10,6 +10,7 @@ import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
 import {SeparatePeopleComponent} from "./pages/people/separate-people/separate-people.component";
 import {MainpageComponent} from "./mainpage/mainpage.component";
+import {NewsOneComponent} from "./pages/news-one/news-one.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'news', component:  NewsComponent },
   { path: 'rental', component: RentalComponent},
   { path: 'separate-people', component: SeparatePeopleComponent},
-  { path: 'main', component: MainpageComponent}
+  { path: 'main', component: MainpageComponent},
+  { path: 'news-one', component: NewsOneComponent}
 ];
 
 
