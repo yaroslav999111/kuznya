@@ -13,6 +13,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import {LoginService} from "../services/login.service";
 import {AuthService} from "../services/auth.service";
 import { SeparatePeopleComponent } from './pages/people/separate-people/separate-people.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SeparatePeopleComponent } from './pages/people/separate-people/separate
     NewsComponent,
     RentalComponent,
     RegistrationComponent,
-    SeparatePeopleComponent
+    SeparatePeopleComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
