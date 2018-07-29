@@ -16,6 +16,7 @@ import { SeparatePeopleComponent } from './pages/people/separate-people/separate
 import { MainpageComponent } from './mainpage/mainpage.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewsOneComponent } from './pages/news-one/news-one.component';
+import {AuthGuard} from "../services/auth-guard.service";
 
 
 @NgModule({

@@ -19,7 +19,11 @@
 <div class="header">
   <div class="search">
     <div class="container" >
-      <img routerLink="/main" src="../../assets/imgs/logo.png"> <form><input type="search" name="search" placeholder="Поиск"></form> <a routerLink="/login">Вход</a> <a routerLink="/registration">Регистрация</a>
+      <img routerLink="/main" src="../../assets/imgs/logo.png"> <form><input type="search" name="search" placeholder="Поиск"></form>
+      <a routerLink="/login" *ngIf="!isOnline">Вход</a>
+      <a routerLink="/registration" *ngIf="!isOnline">Регистрация</a>
+      <a *ngIf="isOnline">Добрый день, test@ukr.net</a>
+      <a (click)="logouts()" *ngIf="isOnline">Выйти</a>
     </div>
   </div>
   <div class="menu">
