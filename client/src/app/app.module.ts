@@ -13,6 +13,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import {LoginService} from "../services/login.service";
 import {AuthService} from "../services/auth.service";
 import { SeparatePeopleComponent } from './pages/people/separate-people/separate-people.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { SeparatePeopleComponent } from './pages/people/separate-people/separate
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [LoginService, AuthService],
   bootstrap: [AppComponent]
