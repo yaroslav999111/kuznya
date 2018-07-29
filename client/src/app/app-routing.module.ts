@@ -8,6 +8,7 @@ import {NewsComponent} from "./pages/news/news.component";
 import {RentalComponent} from "./pages/rental/rental.component";
 import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
+import {SeparatePeopleComponent} from "./pages/people/separate-people/separate-people.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'people', pathMatch: 'full'},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'casts', component: CastsComponent},
   { path: 'news', component:  NewsComponent },
-  { path: 'rental', component: RentalComponent}
+  { path: 'rental', component: RentalComponent},
+  { path: 'separate-people', component: SeparatePeopleComponent}
 ];
 
 

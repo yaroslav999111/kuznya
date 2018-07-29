@@ -12,6 +12,7 @@ import { RentalComponent } from './pages/rental/rental.component';
 import { RegistrationComponent } from './registration/registration.component';
 import {LoginService} from "../services/login.service";
 import {AuthService} from "../services/auth.service";
+import { SeparatePeopleComponent } from './pages/people/separate-people/separate-people.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {AuthService} from "../services/auth.service";
     CastsComponent,
     NewsComponent,
     RentalComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    SeparatePeopleComponent
   ],
   imports: [
     BrowserModule,

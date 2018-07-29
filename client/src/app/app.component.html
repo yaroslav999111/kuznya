@@ -1,20 +1,41 @@
-<div class="kuznya-ua">
-  <div class="icon-title">
-    Тут картинка <h1>test</h1>
-  </div>
+<!--<div class="kuznya-ua">-->
+  <!--<div class="icon-title">-->
+    <!--Тут картинка <h1>test</h1>-->
+  <!--</div>-->
+  <!--<div class="search">-->
+    <!--<input type="text">-->
+  <!--</div>-->
+  <!--<div class="settings">-->
+    <!--<span>message-icon</span>-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="navigation-for-pages">-->
+  <!--<div class="people" routerLink="/people">people</div>-->
+  <!--<div class="projects" routerLink="/projects">projects</div>-->
+  <!--<div class="casts" routerLink="/casts">casts</div>-->
+  <!--<div class="news" routerLink="/news">news</div>-->
+  <!--<div class="rental" routerLink="/rental">rental</div>-->
+<!--</div>-->
+<div class="header">
   <div class="search">
-    <input type="text">
+    <div class="container">
+      <img src="../../assets/imgs/logo.png"> <form><input type="search" name="search" placeholder="Поиск"></form> <a routerLink="/login">Вход</a> <a routerLink="/registration">Регистрация</a>
+    </div>
   </div>
-  <div class="settings">
-    <span>message-icon</span>
+  <div class="menu">
+    <div class="container">
+      <a routerLink="/people">Люди</a>
+      <a routerLink="/projects">Проекты</a>
+      <a routerLink="/casts">Кастинги</a>
+      <a routerLink="/news">Новости</a>
+      <a routerLink="/rental">Rental & Sale</a>
+    </div>
   </div>
-</div>
-<div class="navigation-for-pages">
-  <div class="people" routerLink="/people">people</div>
-  <div class="projects" routerLink="/projects">projects</div>
-  <div class="casts" routerLink="/casts">casts</div>
-  <div class="news" routerLink="/news">news</div>
-  <div class="rental" routerLink="/rental">rental</div>
+  <!--<div class="carousel">
+     <div class="container">
+      <img src="img/logos.png">
+     </div>
+  </div>  -->
 </div>
 <router-outlet></router-outlet>
 <div class="footer">

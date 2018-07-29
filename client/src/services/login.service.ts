@@ -12,23 +12,15 @@ export class LoginService implements OnInit {
   ngOnInit() {
   }
 
-  login(loginData: any): Observable<any> {
-    return this.http.post('/api/login', {username: loginData.username, password: loginData.password})
+  getUsers(): Observable<any> {
+    return this.http.get('/api/users')
       .map((res: Response) => {
         return res;
       })
   }
 
-  logout(): Observable<any> {
-    let token = localStorage.getItem('token');
-    return this.http.get('/api/' + `${token}` + '&userOnlineStatus=0')
-      .map((res: Response) => {
-        return res;
-      })
-  }
-
-  register(registerData: any): Observable<any> {
-    return this.http.post('/api/register', {username: registerData.username, password: registerData.password})
+  addUser(user: any): Observable<any> {
+    return this.http.post('/api/addUser', {username: user.username, password: user.password})
       .map((res: Response) => {
         return res;
       })

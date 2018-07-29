@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+body {padding: 0px;
+  margin:0px;
+  font-family: 'Roboto', sans-serif;}
+
+
+/*----- HEADER,FOOTER,MAIN -------*/
+/* Контейнер */
+.container {
+  margin: auto;
+  width: 980px;}
+
+/* Верхняя часть сайта (логотип, поиск, вход и т.п.) */
+.search a, .search img, .search form {
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 24px;}
+
+.search { background:#33427d;width: 100%;}
+.search img {width: 326px;}
+.search a {color:#878cb2;text-decoration: none;}
+.search form input {
+  background: #2a386f;
+  border-radius: 20px;
+  border: 1px solid #192050;
+  line-height: 23px;
+  width: 270px;
+  color: #d8d8d8;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Верхнее меню */
+.menu { background:#f6f6f6;}
+.menu a {
+  color: #000;
+  margin: 46px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 38px;
+  padding: 9px;}
+.menu a:hover {
+  box-shadow: 0px 2px 9px #000;
+}
+
+/* Карусель рекламы */
+.carousel{ background:#e8e8e8;}
+.carousel img {width: 100%;}
+
+/* Блок с главным контентом */
+.main {background:#e8e8e8;
+  border-top:1px solid #ccc;
+  padding-top: 30px;}
+
+/*----- END OF HEADER,FOOTER,MAIN -------*/
+
+
+/* Аватар пользователя */
+.avatar {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.avatar-red {box-shadow: 0px 0px 10px #de0303;}
+.avatar-green {box-shadow: 0px 0px 10px #25bb1b;}
+
+
+.info-all, .my-project {
+  background: #fff;
+  width: 47%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;}
+
+.info-all span, .my-project span {
+  font-weight: 600;
+  color: #696969;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+.info-all p {font-size: 15px;}
+
+.info-all-edit {font-size: 12px;
+  font-weight: 100;
+  color:#909090;
+  float: right;}
+
+
+.project-list h6 {
+  font-weight: 500;
+  color: #696969;
+  font-size: 15px;
+  display: block;
+  margin: 0px;
+  text-decoration: underline;}
+
+
+
+.info-main {width: 804px;
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  margin-left: 10px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.info-main h1, .info-main p, .info-main h4{padding: 0px;margin: 0px;margin-left: 10px;}
+.info-main-name {background: #33427d;}
+.info-main h1 {
+  color: #d6e0ff;
+  padding-top: 10px;
+  padding-bottom: 10px;    display: inline-flex;}
+.info-main h4 {padding-bottom: 10px;}
+.starr {    float: right;
+  font-size: 36px;
+  margin-right: 20px;}
+.starr b {color: #f5e537;}
+
+
+
+/* Выпадающие меню */
+
+
+.select-box {
+  cursor: pointer;
+  position: relative;
+  max-width: 15em;
+  margin: 1em auto;
+  width: 100%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.select,
+.label {
+  color: #bbbbbb;
+  display: block;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 40px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+.select-box1 {
+  background: #33427d;
+}
+
+.label {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.open .label::after {
+  content: "▲";
+}
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 15px;
+  border-left: 5px solid #fff;
+}
+
+
+/* Project etc */
+.project-all{
+  background: #fff;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;}
+
+.project-light {    box-shadow: 0 0 20px #ffda00;}
+.more {background: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;}
+
+.project-all img {float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;    }
+
+
+/* форма поиска */
+.d3 {width: 300px;}
+.d3 input::-webkit-input-placeholder { color: #fff; }
+.d3 form {
+  background: #33427d;
+}
+.d3 input, .d3 button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.d3 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+.d3 button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.d3 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #fff;
+}
+
+.d3 form {position: relative;
+  width: 300px;
+  margin: 0 auto;}
+
+
+
+/* Страница входа на сайт */
+.div-login {width: 300px;    margin: auto;text-align: center;min-height: 500px;}
+.div-login img{ width: 100%; }
+.div-login form input[type=text] { width: 97%;
+  background: #ffffff;
+  padding: 3px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-top: 6px;}
+.div-login form input[type=submit] {    width: 100%;
+  background: #33427d;
+  padding: 6px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #f6f6f6;
+  margin-top: 6px;}
+.div-login a {text-decoration: none;}
