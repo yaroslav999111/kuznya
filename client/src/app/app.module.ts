@@ -17,6 +17,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewsOneComponent } from './pages/news-one/news-one.component';
 import {AuthGuard} from "../services/auth-guard.service";
+import { OwnProfileComponent } from './own-profile/own-profile.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {AuthGuard} from "../services/auth-guard.service";
     RegistrationComponent,
     SeparatePeopleComponent,
     MainpageComponent,
-    NewsOneComponent
+    NewsOneComponent,
+    OwnProfileComponent
   ],
   imports: [
     BrowserModule,
