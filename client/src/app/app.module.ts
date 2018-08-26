@@ -18,6 +18,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewsOneComponent } from './pages/news-one/news-one.component';
 import {AuthGuard} from "../services/auth-guard.service";
 import { OwnProfileComponent } from './own-profile/own-profile.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { OwnProfileComponent } from './own-profile/own-profile.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule,
     FormsModule,
     ReactiveFormsModule

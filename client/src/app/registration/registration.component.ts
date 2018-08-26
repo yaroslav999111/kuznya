@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import {LoginService} from "../../services/login.service";
 
 @Component({
   selector: 'app-registration',
@@ -23,7 +24,7 @@ export class RegistrationComponent implements OnInit {
     checkPass: new FormControl(''),
   });
 
-  constructor() { }
+  constructor(public loginService: LoginService) { }
 
   ngOnInit() {
   }
@@ -60,7 +61,15 @@ export class RegistrationComponent implements OnInit {
       this.allForm3 = true;
     }
 
+    this.checkForCorrectEnter();
 
+  }
+
+  checkForCorrectEnter() {
+    if(this.allForm && this.allForm2 && this.allForm3 && this.allForm4) {
+      this.loginService.registerUser(this.registrationForm.value).subscribe(data => {
+      };
+    })
   }
 
 

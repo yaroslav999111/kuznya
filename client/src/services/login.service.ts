@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class LoginService implements OnInit {
-
+  mainUrl: string = 'http://localhost:3333/';
   constructor(public http: HttpClient) {
   }
 
@@ -24,6 +24,13 @@ export class LoginService implements OnInit {
       .map((res: Response) => {
         return res;
       })
+  }
+
+  registerUser(user: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'register', {username: user. name, sname: user.sname, mobile: user.mobile, email: user.email, password: user.password})
+      .map((res: Response) => {
+        return res;
+      });
   }
 
 
