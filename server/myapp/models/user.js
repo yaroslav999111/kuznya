@@ -14,12 +14,15 @@ const userSchema = new Schema({
     sname: {
         type: String
     },
+    email: {
+      type: String
+    },
     mobile: {
         type: String
     },
     password: {
         type: String
-    },
+    }
 } , {collection: 'newUsers'});
 
 var User = module.exports = mongoose.model("User", userSchema);
