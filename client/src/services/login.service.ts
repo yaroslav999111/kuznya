@@ -8,6 +8,7 @@ import {BehaviorSubject} from 'rxjs';
 export class LoginService implements OnInit {
   mainUrl: string = 'http://localhost:3333/';
   currentUser = new BehaviorSubject({});
+  currentUserInformation = new BehaviorSubject({});
 
   constructor(public http: HttpClient) {
   }
@@ -39,6 +40,13 @@ export class LoginService implements OnInit {
 
   loginUser(user: any): Observable<any> {
     return this.http.post(this.mainUrl + 'login', {email: user.email, password: user.password})
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
+  updateUser(user: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'register/update', user)
       .map((res: Response) => {
         return res;
       });

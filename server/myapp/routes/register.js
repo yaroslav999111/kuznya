@@ -22,6 +22,7 @@ router.post('/', function(req, res, next) {
             password: password,
             email: email
         });
+
         User.createUser(newUser, function(err, callback) {
             if(err) throw err;
             res.json(callback);
@@ -30,5 +31,34 @@ router.post('/', function(req, res, next) {
         // req.flash('success_msg', 'You are register and now login');
     // }
 });
+
+router.post('/update', function(req, res, next) {
+
+    var updateUserModel = new User({
+        username: req.body.username,
+        sname: req.body.sname,
+        mobile: req.body.mobile,
+        password: req.body.password,
+        email: req.body.email,
+        site: req.body.site,
+        position: req.body.position,
+        about: req.body.about,
+        freeOrBusy: req.body.fob,
+        photoAva: req.body.photoA,
+        newEmail: req.body.newEmail
+    });
+
+    User.updateUser( updateUserModel, function(err, callback) {
+        if(err) throw err;
+        res.json(callback);
+    });
+
+
+
+
+    // req.flash('success_msg', 'You are register and now login');
+    // }
+});
+
 
 module.exports = router;

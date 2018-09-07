@@ -7,23 +7,28 @@
     </div>
 
     <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
+
+      <div class="info-main-name"><h1>{{profileInformation?.username}} {{profileInformation?.sname}}</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
       <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
+      <p><span>Моб.тел:</span> {{profileInformation?.mobile}}</p>
+      <p><span>Email:</span> {{profileInformation?.email}}</p>
       <p><span>Сайт:</span> fb.com/karapuz</p>
 
     </div>
 
     <div class="info-all-profile">
       <span><img src="../../assets/imgs/info-all-ico.jpg" > Редактировать данные</span>
-      <form >
-        <input type="text"  placeholder="Телефон">
-        <input class="password-in" type="text" placeholder="Email">
-        <input type="text"  placeholder="Сайт\Facebook">
-        <input type="text"  placeholder="Ваша должность">
-        <textarea type="text"  placeholder="Кратко о себе"></textarea>
-        Занятость: <select><option>Свободен</option><option>Занят</option></select><br>
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" >
+        <input type="text" formControlName="mobile"  placeholder="Телефон">
+        <input class="password-in" formControlName="email" type="text" placeholder="Email">
+        <input type="text" formControlName="site" placeholder="Сайт\Facebook">
+        <input type="text" formControlName="position" placeholder="Ваша должность">
+        <textarea type="text" formControlName="about"  placeholder="Кратко о себе"></textarea>
+        Занятость:
+        <select formControlName="freeOrBusy" [(ngModel)]="category.status">
+          <option [value]="1" [selected]="category.status ==1">Свободен</option>
+          <option [value]="0" [selected]="category.status ==0">Занят</option>
+        </select><br>
         <img src="../../assets/imgs/inport.png" class="middle">
         <input type="submit" class="btn-submit" value="Изменить данные">
       </form>
