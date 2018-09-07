@@ -16,7 +16,7 @@ router.post('/', function(req, res, next) {
     User.getUserByEmail(newUser, function(err, user, next) {
         if(err) res.send(err);
         else {
-            res.json(newUser.email);
+            res.json(user);
         }
     });
 
