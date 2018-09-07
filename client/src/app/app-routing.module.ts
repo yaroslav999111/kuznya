@@ -12,6 +12,9 @@ import {SeparatePeopleComponent} from "./pages/people/separate-people/separate-p
 import {MainpageComponent} from "./mainpage/mainpage.component";
 import {NewsOneComponent} from "./pages/news-one/news-one.component";
 import { OwnProfileComponent} from "./own-profile/own-profile.component";
+import { AdvComponent} from "./pages/adv/adv.component";
+import { RoolesComponent} from "./pages/rooles/rooles.component";
+import { ContactsComponent} from "./pages/contacts/contacts.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -25,7 +28,10 @@ const routes: Routes = [
   { path: 'separate-people', component: SeparatePeopleComponent},
   { path: 'main', component: MainpageComponent},
   { path: 'news-one', component: NewsOneComponent},
-  { path: 'profile', component: OwnProfileComponent}
+  { path: 'profile', component: OwnProfileComponent},
+  { path: 'adv', component: AdvComponent},
+  { path: 'contacts', component: ContactsComponent},
+  { path: 'rooles', component: RoolesComponent}
 ];
 
 

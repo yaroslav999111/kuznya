@@ -19,6 +19,9 @@ import { NewsOneComponent } from './pages/news-one/news-one.component';
 import {AuthGuard} from "../services/auth-guard.service";
 import { OwnProfileComponent } from './own-profile/own-profile.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ContactsComponent } from './pages/contacts/contacts.component';
+import { AdvComponent } from './pages/adv/adv.component';
+import { RoolesComponent } from './pages/rooles/rooles.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import {HttpClientModule} from "@angular/common/http";
     SeparatePeopleComponent,
     MainpageComponent,
     NewsOneComponent,
-    OwnProfileComponent
+    OwnProfileComponent,
+    ContactsComponent,
+    AdvComponent,
+    RoolesComponent
   ],
   imports: [
     BrowserModule,

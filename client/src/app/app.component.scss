@@ -51,7 +51,8 @@ body {padding: 0px;
 /* Блок с главным контентом */
 .main {background:#e8e8e8;
   border-top:1px solid #ccc;
-  padding-top: 30px;}
+  padding-top: 30px;
+  padding-bottom: 30px;}
 
 /*----- END OF HEADER,FOOTER,MAIN -------*/
 
@@ -261,3 +262,9 @@ body {padding: 0px;
 .search .container {
   cursor: pointer;
 }
+
+.footer {background: #d4d4d4;padding-top:20px;padding-bottom: 20px;}
+.footer ul li{list-style-type:none;}
+.footer ul{
+margin: 0px;
+padding: 0px;}
