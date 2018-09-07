@@ -13,6 +13,7 @@ router.post('/', function(req, res, next) {
         password: req.body.password,
         email: req.body.email
     });
+
     User.getUserByEmail(newUser, function(err, user, next) {
         if(err) res.send(err);
         else {

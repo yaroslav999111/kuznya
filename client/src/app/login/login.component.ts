@@ -26,18 +26,20 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     this.loginService.loginUser(this.loginForm.value).subscribe(data => {
-
       if (data.status) {
         this.correctForm = true;
         this.correctLogin = false;
       } else if (!data.status) {
         this.loginService.currentUser.next({name: data['username']});
+        this.loginService.currentUserInformation.next(data);
+
         this.correctForm = false;
         this.correctLogin = true;
         // setTimeout(function() {this.router.navigate(['main']) }, 3000);
         this.authGuard.userIsLogin.next({'isLogin': 'true'});
         this.router.navigate(['main']);
       }
+
     });
 
 

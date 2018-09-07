@@ -9,20 +9,38 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     username: {
-        type: String
+        type: String,
+        min: 1
     },
     sname: {
         type: String
     },
     email: {
-      type: String
+      type: String,
+        min: 1
     },
     mobile: {
         type: String
     },
     password: {
         type: String
+    },
+    site: {
+        type: String
+    },
+    position: {
+        type: String
+    },
+    about: {
+        type: String
+    },
+    freeOrBusy: {
+        type: String
+    },
+    newEmail: {
+        type: String
     }
+
 } , {collection: 'newUsers'});
 
 var User = module.exports = mongoose.model("User", userSchema);
@@ -36,6 +54,71 @@ module.exports.createUser = function(newUser, callback) {
     //     });
     // });
     newUser.save(callback);
+};
+
+module.exports.updateUser = function(updateUser, callback) {
+    var updateUserNewCheckedData = {};
+
+    function checkForLength() {
+        if(updateUser.username.length) {
+            updateUserNewCheckedData.username = updateUser.username
+        }
+        if(updateUser.sname) {
+            updateUserNewCheckedData.sname = updateUser.sname
+        }
+        if (updateUser.mobile) {
+            updateUserNewCheckedData.mobile = updateUser.mobile
+        }
+        if (updateUser.password) {
+            updateUserNewCheckedData.password = updateUser.password
+        }
+        if (updateUser.newEmail) {
+            updateUserNewCheckedData.email = updateUser.newEmail
+        }
+        if (updateUser.site) {
+            updateUserNewCheckedData.site = updateUser.site
+        }
+        if (updateUser.position) {
+            updateUserNewCheckedData.position = updateUser.position
+        }
+        if (updateUser.about) {
+            updateUserNewCheckedData.about = updateUser.about
+        }
+        if (updateUser.freeOrBusy) {
+            updateUserNewCheckedData.freeOrBusy = updateUser.freeOrBusy
+        }
+        if (updateUser.photoAva) {
+            updateUserNewCheckedData.photoAva = updateUser.photoAva
+        }
+
+    }
+    checkForLength();
+
+   User.findOneAndUpdate({email: updateUser.email}, {
+
+
+       $set: updateUserNewCheckedData
+
+           // username: updateUser.username,
+           // sname: updateUser.sname,
+           // mobile: updateUser.mobile,
+           // password: updateUser.password,
+           // email: updateUser.email,
+           // site: updateUser.site,
+           // position: updateUser.position,
+           // about: updateUser.about,
+           // freeOrBusy: updateUser.fob,
+           // photoAva: updateUser.photoA
+
+
+       }, {new: true}, function(err, doc){
+       if(err) {
+           return callback(err);
+       } else {
+           return callback();
+       }
+    })
+
 };
 
 
