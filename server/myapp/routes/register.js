@@ -22,9 +22,9 @@ router.post('/', function(req, res, next) {
             password: password,
             email: email
         });
-        User.createUser(newUser, function(err, user) {
+        User.createUser(newUser, function(err, callback) {
             if(err) throw err;
-            res.json({user: req.body.username});
+            res.json(callback);
         });
 
         // req.flash('success_msg', 'You are register and now login');

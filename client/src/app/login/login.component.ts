@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.loginForm.value);
     if(this.loginForm.value["email"] == "test@ukr.net" && this.loginForm.value["password"]=="123456789") {
       // this.authGuard.userIsLogin.next({'isLogin': 'true'});
       this.correctForm = false;
