@@ -56,6 +56,11 @@ module.exports.createUser = function(newUser, callback) {
     newUser.save(callback);
 };
 
+module.exports.addProject = function(newUser, callback) {
+
+    newUser.save(callback);
+};
+
 module.exports.updateUser = function(updateUser, callback) {
     var updateUserNewCheckedData = {};
 
@@ -96,26 +101,13 @@ module.exports.updateUser = function(updateUser, callback) {
 
    User.findOneAndUpdate({email: updateUser.email}, {
 
-
        $set: updateUserNewCheckedData
 
-           // username: updateUser.username,
-           // sname: updateUser.sname,
-           // mobile: updateUser.mobile,
-           // password: updateUser.password,
-           // email: updateUser.email,
-           // site: updateUser.site,
-           // position: updateUser.position,
-           // about: updateUser.about,
-           // freeOrBusy: updateUser.fob,
-           // photoAva: updateUser.photoA
-
-
-       }, {new: true}, function(err, doc){
+       }, {new: true}, function(err, user, doc){
        if(err) {
            return callback(err);
        } else {
-           return callback();
+           return callback(null, user);
        }
     })
 

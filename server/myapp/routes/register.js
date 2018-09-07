@@ -33,7 +33,6 @@ router.post('/', function(req, res, next) {
 });
 
 router.post('/update', function(req, res, next) {
-
     var updateUserModel = new User({
         username: req.body.username,
         sname: req.body.sname,
@@ -47,17 +46,21 @@ router.post('/update', function(req, res, next) {
         photoAva: req.body.photoA,
         newEmail: req.body.newEmail
     });
-
-    User.updateUser( updateUserModel, function(err, callback) {
+    User.updateUser( updateUserModel, function(err, user, callback) {
         if(err) throw err;
-        res.json(callback);
+        res.json(user);
     });
+});
 
 
-
-
-    // req.flash('success_msg', 'You are register and now login');
-    // }
+router.post('/addProject', function(req, res, next) {
+    var addProjectModel = new User.projects({
+        categoty: req.body.categoty
+    });
+    User.updateUser( updateUserModel, function(err, user, callback) {
+        if(err) throw err;
+        res.json(user);
+    });
 });
 
 

@@ -25,8 +25,7 @@ export class OwnProfileComponent implements OnInit {
   constructor(public loginService: LoginService) { }
 
   ngOnInit() {
-   this.profileInformation =  this.loginService.currentUserInformation.value;
-   console.log( this.profileInformation );
+   this.profileInformation = this.loginService.currentUserInformation.value;
   }
 
   onSubmit() {
@@ -42,9 +41,9 @@ export class OwnProfileComponent implements OnInit {
       about: this.profileForm.value.about,
       freeOrBusy: this.profileForm.value.freeOrBusy,
     };
-    // console.log( updateUserData);
     this.loginService.updateUser(updateUserData).subscribe(data => {
-      console.log(data)
+     this.loginService.currentUserInformation.next(data);
+      this.profileInformation = this.loginService.currentUserInformation.value;
     });
 
   }
