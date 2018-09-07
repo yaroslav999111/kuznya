@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
         this.correctForm = true;
         this.correctLogin = false;
       } else if (!data.status) {
+        this.loginService.currentUser.next({name: data['username']});
         this.correctForm = false;
         this.correctLogin = true;
         // setTimeout(function() {this.router.navigate(['main']) }, 3000);

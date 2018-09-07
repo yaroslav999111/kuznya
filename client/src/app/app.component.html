@@ -22,7 +22,8 @@
       <img routerLink="/main" src="../../assets/imgs/logo.png"> <form><input type="search" name="search" placeholder="Поиск"></form>
       <a routerLink="/login" *ngIf="!isOnline">Вход</a>
       <a routerLink="/registration" *ngIf="!isOnline">Регистрация</a>
-      <a routerLink="/profile" *ngIf="isOnline">Добрый день, test@ukr.net</a>
+      <a routerLink="/profile" *ngIf="isOnline">Добрый день, {{userName}}</a>
+
       <a (click)="logouts()" *ngIf="isOnline">Выйти</a>
     </div>
   </div>

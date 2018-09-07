@@ -56,13 +56,24 @@ module.exports.getUserByEmail = userSchema.statics.authenticate = function(newUs
                     err.status = 401;
                     return callback(err);
                 } else {
-                    bcrypt.compare(newUser.password, user.password, function (err, result) {
-                        if (result === true) {
-                            return callback(null, user);
-                        } else {
-                            return callback();
-                        }
-                    })
+                    if (user.password === newUser.password ) {
+                        return callback(null, user);
+                    } else {
+                        var err = new Error('Incorrect password.');
+                        err.status = 401;
+                        return callback(err);
+                    }
+
+
+                    // bcrypt.compare(newUser.password, user.password, function (err, result) {
+                    //     if (result === true) {
+                    //         console.log('nice');
+                    //         return callback(null, user);
+                    //     } else {
+                    //         console.log('error');
+                    //         return callback();
+                    //     }
+                    // })
                 }
             });
 
