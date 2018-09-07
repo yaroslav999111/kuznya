@@ -33,5 +33,12 @@ export class LoginService implements OnInit {
       });
   }
 
+  loginUser(user: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'login', {email: user.email, password: user.password})
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
 
 }

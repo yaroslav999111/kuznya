@@ -66,7 +66,7 @@ export class RegistrationComponent implements OnInit {
   }
 
   checkForCorrectEnter() {
-    if(this.allForm && this.allForm2 && this.allForm3 && this.allForm4) {
+    if (this.allForm && this.allForm2 && this.allForm3 && this.allForm4) {
       this.loginService.registerUser(this.registrationForm.value).subscribe(data => {
       });
     }

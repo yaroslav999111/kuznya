@@ -28,18 +28,45 @@ const userSchema = new Schema({
 var User = module.exports = mongoose.model("User", userSchema);
 
 module.exports.createUser = function(newUser, callback) {
-    bcrypt.genSalt(10, function(err, salt) {
-        bcrypt.hash(newUser.password, salt, function(err, hash) {
-            // Store hash in your password DB.
-            newUser.password = hash;
-            newUser.save(callback)
-        });
-    });
+    // bcrypt.genSalt(10, function(err, salt) {
+    //     bcrypt.hash(newUser.password, salt, function(err, hash) {
+    //         // Store hash in your password DB.
+    //         newUser.password = hash;
+    //         newUser.save(callback)
+    //     });
+    // });
+    newUser.save(callback);
 };
+
 
 module.exports.getUserByUsername = function(username, callback) {
     var query = {username: username};
     User.findOne(query, callback);
+};
+
+module.exports.getUserByEmail = userSchema.statics.authenticate = function(newUser, callback) {
+
+        User.findOne({ email: newUser.email })
+            .exec(function (err, user) {
+                if (err) {
+                    return callback(err)
+                }
+                else if (!user) {
+                    var err = new Error('User not found.');
+                    err.status = 401;
+                    return callback(err);
+                } else {
+                    bcrypt.compare(newUser.password, user.password, function (err, result) {
+                        if (result === true) {
+                            return callback(null, user);
+                        } else {
+                            return callback();
+                        }
+                    })
+                }
+            });
+
+
 };
 
 module.exports.getUserById = function(id, callback) {
@@ -51,4 +78,5 @@ module.exports.comparePassword = function(candidatePassword, hash, callback) {
         if(err) throw err;
         callback(null, isMatch);
     })
-}
+
+};
