@@ -22,10 +22,32 @@ export class OwnProfileComponent implements OnInit {
     freeOrBusy: new FormControl(''),
   });
 
+  projectForm = new FormGroup({
+    title: new FormControl(''),
+    story: new FormControl(''),
+    category: new FormControl(''),
+  });
+
   constructor(public loginService: LoginService) { }
 
   ngOnInit() {
    this.profileInformation = this.loginService.currentUserInformation.value;
+  }
+
+  saveProject() {
+    const project = {
+      email: this.profileInformation['email'],
+      newEmail: this.profileForm.value.email,
+      title: this.projectForm.value.title,
+      story: this.projectForm.value.story,
+      category: this.projectForm.value.category
+    };
+
+    this.loginService.addProject(project).subscribe(data => {
+      console.log(data);
+    });
+
+
   }
 
   onSubmit() {
@@ -36,7 +58,7 @@ export class OwnProfileComponent implements OnInit {
       sname: this.profileForm.value.sname,
       email: this.profileInformation['email'],
       newEmail: this.profileForm.value.email,
-      site: this.profileForm.value. site,
+      site: this.profileForm.value.site,
       position: this.profileForm.value.position,
       about: this.profileForm.value.about,
       freeOrBusy: this.profileForm.value.freeOrBusy,
@@ -44,6 +66,22 @@ export class OwnProfileComponent implements OnInit {
     this.loginService.updateUser(updateUserData).subscribe(data => {
      this.loginService.currentUserInformation.next(data);
       this.profileInformation = this.loginService.currentUserInformation.value;
+    });
+
+    if (this.profileForm.value.email) {
+      this.updateUserEmailForCategories();
+    }
+
+  }
+
+
+  updateUserEmailForCategories() {
+    const updateUserData = {
+      email: this.profileInformation['email'],
+      newEmail: this.profileForm.value.email,
+    };
+
+    this.loginService.updatePostUserEmailForCategories(updateUserData).subscribe(data => {
     });
 
   }

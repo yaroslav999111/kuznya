@@ -52,5 +52,19 @@ export class LoginService implements OnInit {
       });
   }
 
+  updatePostUserEmailForCategories(user: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'projects/update', user)
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
+  addProject(project: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'projects', project)
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
 
 }

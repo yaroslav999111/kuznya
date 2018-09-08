@@ -56,16 +56,16 @@ module.exports.createUser = function(newUser, callback) {
     newUser.save(callback);
 };
 
-module.exports.addProject = function(newUser, callback) {
-
-    newUser.save(callback);
-};
+// module.exports.addProject = function(newUser, callback) {
+//
+//     newUser.save(callback);
+// };
 
 module.exports.updateUser = function(updateUser, callback) {
     var updateUserNewCheckedData = {};
 
     function checkForLength() {
-        if(updateUser.username.length) {
+        if(updateUser.username) {
             updateUserNewCheckedData.username = updateUser.username
         }
         if(updateUser.sname) {

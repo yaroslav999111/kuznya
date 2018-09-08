@@ -76,20 +76,22 @@
     <div class="my-project">
       <span><img src="../../assets/imgs/my-project-ico.jpg" > Добавить</span>
 
-<form class="my-project-form">
-      <input type="text" placeholder="Заголовок">
-      <textarea placeholder="Основной текст" rows="15"></textarea>
-  Выберите категорию:
-  <select>
-    <option>Новости</option>
-    <option>Проекты</option>
-    <option>Кастинги</option>
-    <option>Rental & sale</option>
-  </select>
-  <br>
-  <img src="../../assets/imgs/photo.png" class="middle">
-  <input type="submit" value="Опубликовать" class="btn-submit">
-    </form>
+  <form [formGroup]="projectForm" (ngSubmit)="saveProject()" class="my-project-form">
+
+            <input type="text" formControlName="title" placeholder="Заголовок">
+            <textarea placeholder="Основной текст"  formControlName="story" rows="15"></textarea>
+              Выберите категорию:
+          <select>
+          <option>Новости</option>
+          <option>Проекты</option>
+          <option>Кастинги</option>
+          <option>Rental & sale</option>
+        </select>
+        <br>
+        <img src="../../assets/imgs/photo.png" class="middle">
+        <input type="submit" value="Опубликовать" class="btn-submit">
+
+  </form>
 
 
     </div>
