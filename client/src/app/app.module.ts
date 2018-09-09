@@ -22,6 +22,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AdvComponent } from './pages/adv/adv.component';
 import { RoolesComponent } from './pages/rooles/rooles.component';
 import {ProjectsService} from "../services/projects.service";
+import {UsersService} from "../services/users.service";
 
 
 @NgModule({
@@ -50,7 +51,7 @@ import {ProjectsService} from "../services/projects.service";
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [LoginService, AuthService, ProjectsService],
+  providers: [LoginService, AuthService, ProjectsService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

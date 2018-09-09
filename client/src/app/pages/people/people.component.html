@@ -40,66 +40,26 @@
     </form>
 
 
-    <div class="avatar avatar-red" routerLink="/separate-people">
-      <img src="../../../assets/imgs/avatar.jpg">
-    </div>
+    <div class="user"  *ngFor="let user of users">
 
-    <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
-      <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
-      <p><span>Сайт:</span> fb.com/karapuz</p>
 
-    </div>
-    <div class="avatar avatar-red" routerLink="/separate-people">
-      <img src="../../../assets/imgs/avatar.jpg">
-    </div>
+      <div class="avatar avatar-red" routerLink="/separate-people" (click)="goUser(user)">
+        <img src="../../../assets/imgs/avatar.jpg">
+      </div>
 
-    <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
-      <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
-      <p><span>Сайт:</span> fb.com/karapuz</p>
+      <div class="info-main" >
+        <div class="info-main-name"><h1>{{user?.username}} {{user?.sname}}</h1>
+          <!--<span class="starr"><b>★★★★★★</b>★★★★</span> -->
+        </div>
+        <h4>{{user?.position}}</h4>
+        <p><span>Моб.тел:</span>{{user?.mobile}}</p>
+        <p><span>Email:</span> {{user?.email}}</p>
+        <p><span>Сайт:</span> {{user?.site}}</p>
+
+      </div>
 
     </div>
-    <div class="avatar avatar-red" routerLink="/separate-people">
-      <img src="../../../assets/imgs/avatar.jpg">
-    </div>
 
-    <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
-      <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
-      <p><span>Сайт:</span> fb.com/karapuz</p>
-
-    </div>
-    <div class="avatar avatar-red">
-      <img src="../../../assets/imgs/avatar.jpg">
-    </div>
-
-    <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
-      <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
-      <p><span>Сайт:</span> fb.com/karapuz</p>
-
-    </div>
-    <div class="avatar avatar-red" routerLink="/separate-people">
-      <img src="../../../assets/imgs/avatar.jpg">
-    </div>
-
-    <div class="info-main">
-      <div class="info-main-name"><h1>Бред Питт</h1>  <span class="starr"><b>★★★★★★</b>★★★★</span> </div>
-      <h4>Директор сьемочной площадки</h4>
-      <p><span>Моб.тел:</span> 099 99 999 99</p>
-      <p><span>Email:</span> karapuz@mini.ua</p>
-      <p><span>Сайт:</span> fb.com/karapuz</p>
-
-    </div>
 
 
 

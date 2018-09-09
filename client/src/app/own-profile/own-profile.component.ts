@@ -37,6 +37,7 @@ export class OwnProfileComponent implements OnInit {
 
   ngOnInit() {
    this.profileInformation = this.loginService.currentUserInformation.value;
+   console.log(this.profileInformation);
    this.getMyProjects();
   }
 
