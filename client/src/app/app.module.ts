@@ -16,12 +16,12 @@ import { SeparatePeopleComponent } from './pages/people/separate-people/separate
 import { MainpageComponent } from './mainpage/mainpage.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewsOneComponent } from './pages/news-one/news-one.component';
-import {AuthGuard} from "../services/auth-guard.service";
 import { OwnProfileComponent } from './own-profile/own-profile.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AdvComponent } from './pages/adv/adv.component';
 import { RoolesComponent } from './pages/rooles/rooles.component';
+import {ProjectsService} from "../services/projects.service";
 
 
 @NgModule({
@@ -50,7 +50,7 @@ import { RoolesComponent } from './pages/rooles/rooles.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [LoginService, AuthService],
+  providers: [LoginService, AuthService, ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

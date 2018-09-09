@@ -25,9 +25,9 @@
         <input type="text" formControlName="position" placeholder="Ваша должность">
         <textarea type="text" formControlName="about"  placeholder="Кратко о себе"></textarea>
         Занятость:
-        <select formControlName="freeOrBusy" [(ngModel)]="category.status">
-          <option [value]="1" [selected]="category.status ==1">Свободен</option>
-          <option [value]="0" [selected]="category.status ==0">Занят</option>
+        <select formControlName="freeOrBusy" [(ngModel)]="busy.status">
+          <option [value]="1" [selected]="busy.status ==1">Свободен</option>
+          <option [value]="0" [selected]="busy.status ==0">Занят</option>
         </select><br>
         <img src="../../assets/imgs/inport.png" class="middle">
         <input type="submit" class="btn-submit" value="Изменить данные">
@@ -52,23 +52,15 @@
     <div class="my-project">
       <span><img src="../../assets/imgs/my-project-ico.jpg" > Мои проекты</span>
 
-      <div class="project-list">
-        <h6>Писта рулю <a href="#" class="dot">✎</a></h6>
-        <p>Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения позиций, занимаемых участниками...</p>
-        <a href="#" class="project-list-a">Удалить✖</a>
+      <div class="project-list" *ngFor="let project of myProjects">
 
+        <!--<h6>Писта рулю <a href="#" class="dot">✎</a></h6>-->
+        <h6>{{project.title}}<a href="#" class="dot"></a></h6>
+        <p>{{project.story}}</p>
+        <span class="project-list-a" (click)="deleteProject(project._id)">Удалить ✖</span>
 
       </div>
 
-      <div class="project-list">
-        <h6>Писта рулю <a href="#" class="dot">✎</a></h6>
-        <p>Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения позиций, занимаемых участниками...</p>
-        <a href="#" class="project-list-a">Удалить✖</a> </div>
-
-      <div class="project-list">
-        <h6>Писта рулю <a href="#" class="dot">✎</a></h6>
-        <p>Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения позиций, занимаемых участниками...</p>
-        <a href="#" class="project-list-a">Удалить✖</a></div>
 
 
     </div>
@@ -81,11 +73,11 @@
             <input type="text" formControlName="title" placeholder="Заголовок">
             <textarea placeholder="Основной текст"  formControlName="story" rows="15"></textarea>
               Выберите категорию:
-          <select>
-          <option>Новости</option>
-          <option>Проекты</option>
-          <option>Кастинги</option>
-          <option>Rental & sale</option>
+          <select  formControlName="status" [(ngModel)]="category.status">
+          <option [value]="0" [selected]="category.status ==0">Новости</option>
+          <option [value]="1" [selected]="category.status ==1">Проекты</option>
+          <option [value]="2" [selected]="category.status ==2">Кастинги</option>
+          <option [value]="3" [selected]="category.status ==3">Rental & sale</option>
         </select>
         <br>
         <img src="../../assets/imgs/photo.png" class="middle">

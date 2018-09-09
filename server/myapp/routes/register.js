@@ -43,7 +43,7 @@ router.post('/update', function(req, res, next) {
         site: req.body.site,
         position: req.body.position,
         about: req.body.about,
-        freeOrBusy: req.body.fob,
+        freeOrBusy: req.body.freeOrBusy,
         photoAva: req.body.photoA,
         newEmail: req.body.newEmail
     });

@@ -16,6 +16,9 @@ const projectsSchema = new Schema({
     },
     newEmail: {
         type: String
+    },
+    status: {
+        type: String
     }
 
 } , {collection: 'projects'});
@@ -39,6 +42,9 @@ module.exports.addProject = function(projects, callback) {
         }
         if (projects.category) {
             updateUserNewCheckedData.category = projects.category
+        }
+        if (projects.status) {
+            updateUserNewCheckedData.status = projects.status
         }
 
         projects.save(callback);
@@ -69,13 +75,33 @@ module.exports.updateProjects = function(projects, callback) {
         $set: updateUserNewCheckedData
     }, {multi:true, upsert:true}, function(err, Projects) {
         if(err) {
-            console.log('1');
             return callback(err);
         } else {
-            console.log(Projects);
             return callback(null, Projects)
         }
     })
 
 };
 
+
+module.exports.getAllProjects = function(email, callback) {
+    Projects.find({"email": email.email.email}, function(err, Projects) {
+        if(err) {
+            return callback(err);
+        } else {
+            return callback(null, Projects)
+        }
+    })
+};
+
+module.exports.deleteCurrentProject = function(id, callback) {
+    console.log(id);
+    Projects.findOneAndDelete({"_id": id.id},function(err, Projects) {
+        if(err) {
+            return callback(err);
+        } else {
+            return callback(null, Projects)
+        }
+    })
+
+};

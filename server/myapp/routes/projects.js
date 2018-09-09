@@ -15,7 +15,8 @@ router.post('/', function(req, res, next) {
         title: req.body.title,
         story: req.body.story,
         category: req.body.category,
-        newEmail: req.body.newEmail
+        newEmail: req.body.newEmail,
+        status: req.body.status
     });
 
     Projects.addProject(updateProjectsModel, function(err, Projects, callback) {
@@ -38,6 +39,28 @@ router.post('/update', function(req, res, next) {
     });
 
 });
+
+router.post('/getMyProjects', function(req, res, next) {
+    var email = {email: req.body.email};
+
+    Projects.getAllProjects(email, function(err, Projects, callback) {
+        if(err) throw err;
+        res.json(Projects);
+    });
+
+});
+
+router.post('/deleteProject', function(req, res, next) {
+    var id = {id: req.body.id};
+
+    Projects.deleteCurrentProject(id, function(err, Projects, callback) {
+        if(err) throw err;
+        res.json(Projects);
+    });
+
+});
+
+
 
 
 module.exports = router;

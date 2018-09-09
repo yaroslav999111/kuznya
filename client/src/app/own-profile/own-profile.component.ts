@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from "../../services/login.service";
 import {FormControl, FormGroup} from "@angular/forms";
+import {ProjectsService} from "../../services/projects.service";
 
 @Component({
   selector: 'app-own-profile',
@@ -9,7 +10,10 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class OwnProfileComponent implements OnInit {
   profileInformation: any;
-  category: any = { status: 0 };
+  busy: any = { status: 0 };
+  category: any = { status: 0};
+  myProjects: any;
+
   profileForm = new FormGroup({
     mobile: new FormControl(''),
     password: new FormControl(''),
@@ -26,13 +30,28 @@ export class OwnProfileComponent implements OnInit {
     title: new FormControl(''),
     story: new FormControl(''),
     category: new FormControl(''),
+    status:  new FormControl('')
   });
 
-  constructor(public loginService: LoginService) { }
+  constructor(public loginService: LoginService, public projectsService: ProjectsService) { }
 
   ngOnInit() {
    this.profileInformation = this.loginService.currentUserInformation.value;
+   this.getMyProjects();
   }
+
+  getMyProjects() {
+    this.projectsService.getMyProjects(this.profileInformation).subscribe(data => {
+      this.myProjects = data;
+    });
+  }
+
+  deleteProject(id: any) {
+    this.projectsService.deleteCurrentProject(id).subscribe(data => {
+      this.getMyProjects();
+    });
+  }
+
 
   saveProject() {
     const project = {
@@ -40,11 +59,13 @@ export class OwnProfileComponent implements OnInit {
       newEmail: this.profileForm.value.email,
       title: this.projectForm.value.title,
       story: this.projectForm.value.story,
-      category: this.projectForm.value.category
+      category: this.projectForm.value.category,
+      status: this.category.status
     };
 
+
     this.loginService.addProject(project).subscribe(data => {
-      console.log(data);
+      this.getMyProjects();
     });
 
 
@@ -61,7 +82,7 @@ export class OwnProfileComponent implements OnInit {
       site: this.profileForm.value.site,
       position: this.profileForm.value.position,
       about: this.profileForm.value.about,
-      freeOrBusy: this.profileForm.value.freeOrBusy,
+      freeOrBusy: this.busy.status
     };
     this.loginService.updateUser(updateUserData).subscribe(data => {
      this.loginService.currentUserInformation.next(data);
