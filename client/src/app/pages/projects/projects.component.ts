@@ -7,6 +7,7 @@ import {ProjectsService} from '../../../services/projects.service';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+  myAllProjectsByStatus: any;
 
   constructor(private projectsService: ProjectsService) { }
 
@@ -15,7 +16,13 @@ export class ProjectsComponent implements OnInit {
   }
 
   getMyProjects() {
-    console.log('lalal');
+    this.projectsService.getAllProjectsByStatus((1)).subscribe(data => {
+      this.myAllProjectsByStatus = data;
+    });
+  }
+
+  goMore(data: any) {
+    this.projectsService.moreProject.next(data);
   }
 
 

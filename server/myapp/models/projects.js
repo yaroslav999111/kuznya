@@ -94,6 +94,18 @@ module.exports.getAllProjects = function(email, callback) {
     })
 };
 
+module.exports.getProjectByStatus = function(status, callback) {
+    console.log(status.status)
+    Projects.find({"status": status.status}, function(err, Projects) {
+        if(err) {
+            return callback(err);
+        } else {
+            return callback(null, Projects)
+        }
+    })
+};
+
+
 module.exports.deleteCurrentProject = function(id, callback) {
     console.log(id);
     Projects.findOneAndDelete({"_id": id.id},function(err, Projects) {

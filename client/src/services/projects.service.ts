@@ -8,7 +8,7 @@ import {BehaviorSubject} from 'rxjs';
 export class ProjectsService implements OnInit {
   mainUrl: string = 'http://localhost:3333/';
 
-  userProjects = new BehaviorSubject({});
+  moreProject = new BehaviorSubject({});
 
   constructor(public http: HttpClient) {
   }
@@ -26,6 +26,13 @@ export class ProjectsService implements OnInit {
 
   deleteCurrentProject(id: any) {
     return this.http.post(this.mainUrl + 'projects/deleteProject', {id: id})
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
+  getAllProjectsByStatus(status: any) {
+    return this.http.post(this.mainUrl + 'projects/getProjectsByStatus', {status: status})
       .map((res: Response) => {
         return res;
       });

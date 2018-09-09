@@ -60,6 +60,17 @@ router.post('/deleteProject', function(req, res, next) {
 
 });
 
+router.post('/getProjectsByStatus', function(req, res, next) {
+    var status = {status: req.body.status};
+
+    Projects.getProjectByStatus(status, function(err, Projects, callback) {
+        if(err) throw err;
+        res.json(Projects);
+    });
+
+});
+
+
 
 
 
