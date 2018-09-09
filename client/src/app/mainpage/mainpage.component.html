@@ -17,6 +17,7 @@
     <div class="project-list" *ngFor="let projects of myAllProjectsByStatus">
       <h6>{{projects.title}}</h6>
   <p>{{projects.story}}</p>
+      <span routerLink="/news-one" (click)="goMore(projects)" class="more">Подробнее...</span>
     </div>
 
 
@@ -29,6 +30,7 @@
     <div class="project-list" *ngFor="let projects of myAllProjectsByStatus2">
       <h6>{{projects.title}}</h6>
   <p>{{projects.story}}</p>
+      <span routerLink="/news-one" (click)="goMore(projects)" class="more">Подробнее...</span>
     </div>
 
   </div>
