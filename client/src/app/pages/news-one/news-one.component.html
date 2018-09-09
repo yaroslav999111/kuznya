@@ -2,7 +2,7 @@
   <div class="container">
     <div class="project-all ">
       <h2>{{currentProject.title}}</h2>
-      <img src="../../../assets/imgs/kuhnya.jpg">
+      <img  [src]="'data:image/jpg;base64,'+ currentProject.avatar" style="height:250px;width:250px">
       <p>
 
       {{currentProject.story}}

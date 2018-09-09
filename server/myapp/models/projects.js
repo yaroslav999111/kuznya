@@ -19,6 +19,9 @@ const projectsSchema = new Schema({
     },
     status: {
         type: String
+    },
+    avatar: {
+        type: String
     }
 
 } , {collection: 'projects'});
@@ -45,6 +48,9 @@ module.exports.addProject = function(projects, callback) {
         }
         if (projects.status) {
             updateUserNewCheckedData.status = projects.status
+        }
+        if (projects.avatar) {
+            updateUserNewCheckedData.avatar = projects.avatar
         }
 
         projects.save(callback);

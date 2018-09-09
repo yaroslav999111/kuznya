@@ -39,6 +39,9 @@ const userSchema = new Schema({
     },
     newEmail: {
         type: String
+    },
+    avatar: {
+        type: String
     }
 
 } , {collection: 'newUsers'});
@@ -94,6 +97,9 @@ module.exports.updateUser = function(updateUser, callback) {
         }
         if (updateUser.photoAva) {
             updateUserNewCheckedData.photoAva = updateUser.photoAva
+        }
+        if (updateUser.avatar) {
+            updateUserNewCheckedData.avatar = updateUser.avatar
         }
 
     }

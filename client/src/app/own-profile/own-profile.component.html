@@ -3,7 +3,7 @@
 
 
     <div class="avatar avatar-red">
-      <img src="../../assets/imgs/avatar.jpg">
+      <img [src]="'data:image/jpg;base64,'+ profileInformation.avatar" style="height:100%;width:100%">
     </div>
 
     <div class="info-main">
@@ -29,8 +29,15 @@
           <option [value]="1" [selected]="busy.status ==1">Свободен</option>
           <option [value]="0" [selected]="busy.status ==0">Занят</option>
         </select><br>
-        <img src="../../assets/imgs/inport.png" class="middle">
+
+
+
+        <input type="file" class="form-control browse" (change)="getFiles($event)">
+
+
+        <!--<img  (click)="fileInput.click()" src="../../assets/imgs/inport.png" class="middle">-->
         <input type="submit" class="btn-submit" value="Изменить данные">
+
       </form>
 
     </div>
@@ -80,7 +87,12 @@
           <option [value]="3" [selected]="category.status ==3">Rental & sale</option>
         </select>
         <br>
-        <img src="../../assets/imgs/photo.png" class="middle">
+    <!--<img src="../../assets/imgs/photo.png" class="middle">-->
+
+
+    <input type="file" class="form-control browse" (change)="getFiles2($event)">
+
+
         <input type="submit" value="Опубликовать" class="btn-submit">
 
   </form>

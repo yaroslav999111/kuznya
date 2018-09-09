@@ -3,7 +3,7 @@
 
 
     <div class="avatar avatar-red">
-      <img src="../../../../assets/imgs/avatar.jpg">
+      <img [src]="'data:image/jpg;base64,'+ userDetails?.avatar" style="height:100%;width:100%">
     </div>
 
     <div class="info-main">

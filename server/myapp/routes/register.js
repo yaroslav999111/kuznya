@@ -45,7 +45,8 @@ router.post('/update', function(req, res, next) {
         about: req.body.about,
         freeOrBusy: req.body.freeOrBusy,
         photoAva: req.body.photoA,
-        newEmail: req.body.newEmail
+        newEmail: req.body.newEmail,
+        avatar: req.body.avatar
     });
     User.updateUser( updateUserModel, function(err, user, callback) {
         if(err) throw err;

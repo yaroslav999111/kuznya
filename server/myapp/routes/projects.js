@@ -16,7 +16,8 @@ router.post('/', function(req, res, next) {
         story: req.body.story,
         category: req.body.category,
         newEmail: req.body.newEmail,
-        status: req.body.status
+        status: req.body.status,
+        avatar: req.body.avatar
     });
 
     Projects.addProject(updateProjectsModel, function(err, Projects, callback) {

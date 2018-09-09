@@ -44,7 +44,7 @@
 
 
       <div class="avatar avatar-red" routerLink="/separate-people" (click)="goUser(user)">
-        <img src="../../../assets/imgs/avatar.jpg">
+        <img [src]="'data:image/jpg;base64,'+ user.avatar" style="height:100%;width:100%">
       </div>
 
       <div class="info-main" >

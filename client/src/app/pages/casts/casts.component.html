@@ -18,7 +18,7 @@
 
     <div class="project-all project-light" *ngFor="let projects of myAllProjectsByStatus">
       <h2>{{projects.title}}</h2>
-      <img src="../../../assets/imgs/kuhnya.jpg">
+      <img [src]="'data:image/jpg;base64,'+ projects.avatar" style="height:250px;width:250px">
       <p>
         {{projects.story}}
       </p>
