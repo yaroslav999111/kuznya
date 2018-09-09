@@ -42,8 +42,7 @@
 
     <div class="user"  *ngFor="let user of users">
 
-
-      <div class="avatar avatar-red" routerLink="/separate-people" (click)="goUser(user)">
+      <div class="avatar avatar-red" [ngStyle]="{'box-shadow': user.freeOrBusy == 0 ? '0px 0px 10px #de0303' : '0px 0px 10px #25bb1b'}"  routerLink="/separate-people" (click)="goUser(user)">
         <img [src]="'data:image/jpg;base64,'+ user.avatar" style="height:100%;width:100%">
       </div>
 

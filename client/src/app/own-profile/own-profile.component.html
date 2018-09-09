@@ -2,7 +2,7 @@
   <div class="container">
 
 
-    <div class="avatar avatar-red">
+    <div class="avatar avatar-red" [ngStyle]="{'box-shadow': profileInformation.freeOrBusy == 0 ? '0px 0px 10px #de0303' : '0px 0px 10px #25bb1b'}">
       <img [src]="'data:image/jpg;base64,'+ profileInformation.avatar" style="height:100%;width:100%">
     </div>
 

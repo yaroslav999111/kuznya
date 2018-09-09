@@ -35,4 +35,8 @@ export class SeparatePeopleComponent implements OnInit {
 
   }
 
+  goMore(data: any) {
+    this.projectsService.moreProject.next(data);
+  }
+
 }

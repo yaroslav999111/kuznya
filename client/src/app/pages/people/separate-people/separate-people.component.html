@@ -2,7 +2,7 @@
   <div class="container">
 
 
-    <div class="avatar avatar-red">
+    <div class="avatar avatar-red"  [ngStyle]="{'box-shadow':  userDetails?.freeOrBusy == 0 ? '0px 0px 10px #de0303' : '0px 0px 10px #25bb1b'}">
       <img [src]="'data:image/jpg;base64,'+ userDetails?.avatar" style="height:100%;width:100%">
     </div>
 
@@ -34,6 +34,7 @@
       <div class="project-list" *ngFor="let project of currentProjects">
         <h6>{{project.title}}</h6>
         <p>{{project.story}}</p>
+        <span routerLink="/news-one" (click)="goMore(project)" class="more">Подробнее...</span>
       </div>
 
 
