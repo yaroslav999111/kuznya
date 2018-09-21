@@ -14,6 +14,7 @@ export class OwnProfileComponent implements OnInit {
   profileInformation: any;
   busy: any = { status: 0 };
   category: any = { status: 0};
+  position: any = { status: 0};
   myProjects: any;
   selectedFile: File;
   files: any;
@@ -121,7 +122,7 @@ export class OwnProfileComponent implements OnInit {
       email: this.profileInformation['email'],
       newEmail: this.profileForm.value.email,
       site: this.profileForm.value.site,
-      position: this.profileForm.value.position,
+      position: this.position.status,
       about: this.profileForm.value.about,
       freeOrBusy: this.busy.status,
       avatar: this.filestring
