@@ -5,32 +5,112 @@
         <img src="../../../assets/imgs/logos.png">
       </div>
     </div>
-    <form action="#">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
 
       <div class="select-box">
 
-        <label for="select-box1" class="label select-box1"><span class="label-desc">Должность</span> </label>
-        <select id="select-box1" class="select">
-          <option value="Choice 1">Кинооператор</option>
-          <option value="Choice 2">Звукорежисер</option>
-          <option value="Choice 3">Стилист</option>
-        </select>
+        <!--<label for="select-box1" class="label select-box1"><span class="label-desc">Должность</span> </label>-->
+        <!--<select id="select-box1" class="select">-->
+          <!--<option value="Choice 1">Кинооператор</option>-->
+          <!--<option value="Choice 2">Звукорежисер</option>-->
+          <!--<option value="Choice 3">Стилист</option>-->
+        <!--</select>-->
+
+        <select formControlName="freeOrBusy" [(ngModel)]="position.status">
+          <option [value]="111" [selected]="position.status ==111">Все</option>
+          <option [value]="0" [selected]="position.status ==0">Режиссер-постановщик</option>
+          <option [value]="1" [selected]="position.status ==1">2й режиссер</option>
+          <option [value]="2" [selected]="position.status ==2">Помощник режиссера (хлопушка)</option>
+          <option [value]="3" [selected]="position.status ==3">Плейбек</option>
+          <option [value]="4" [selected]="position.status ==4">Скрипт супервайзер (редактор)</option>
+          <option [value]="5" [selected]="position.status ==5">Ассистент по актерам</option>
+          <option [value]="6" [selected]="position.status ==6">Ассистент режиссера по массовке</option>
+          <option [value]="7" [selected]="position.status ==7">Операторская группа:</option>
+          <option [value]="8" [selected]="position.status ==8">Оператор-постановщик</option>
+          <option [value]="9" [selected]="position.status ==9">Камермен</option>
+          <option [value]="10" [selected]="position.status ==10">Фокус-пуллер</option>
+          <option [value]="11" [selected]="position.status ==11">Механик камеры (инженер)</option>
+          <option [value]="12" [selected]="position.status ==12">Дольщик</option>
+          <option [value]="13" [selected]="position.status ==13">Стедикам</option>
+          <option [value]="14" [selected]="position.status ==14">Художественная группа:</option>
+          <option [value]="15" [selected]="position.status ==15">Художник-постановщик</option>
+          <option [value]="16" [selected]="position.status ==16">Ассистент художника постановщика</option>
+          <option [value]="17" [selected]="position.status ==17">Художник-декоратор</option>
+          <option [value]="18" [selected]="position.status ==18">Декоратор</option>
+          <option [value]="19" [selected]="position.status ==19">Бутафор</option>
+          <option [value]="20" [selected]="position.status ==20">Реквизитор</option>
+          <option [value]="21" [selected]="position.status ==21">Постановщик</option>
+          <option [value]="22" [selected]="position.status ==22">Генеральный продюсер</option>
+          <option [value]="23" [selected]="position.status ==23">Исполнительный продюсер</option>
+          <option [value]="24" [selected]="position.status ==24">Креативный продюсер</option>
+          <option [value]="25" [selected]="position.status ==25">Директор (линейный продюсер)</option>
+          <option [value]="26" [selected]="position.status ==26">Заместитель директора</option>
+          <option [value]="27" [selected]="position.status ==27">Администратор</option>
+          <option [value]="28" [selected]="position.status ==28">Хелпер</option>
+          <option [value]="29" [selected]="position.status ==29">Локейшн-менеджер</option>
+          <option [value]="30" [selected]="position.status ==30">Кейтеринг</option>
+          <option [value]="31" [selected]="position.status ==31">Фотограф</option>
+          <option [value]="32" [selected]="position.status ==32">Звукооператор</option>
+          <option [value]="33" [selected]="position.status ==33">Ассистент звукооператора (бумщик)</option>
+          <option [value]="34" [selected]="position.status ==34">Гаффер</option>
+          <option [value]="35" [selected]="position.status ==35">Чиф-электрик</option>
+          <option [value]="36" [selected]="position.status ==36">Кейгрип</option>
+          <option [value]="37" [selected]="position.status ==37">Осветитель</option>
+          <option [value]="38" [selected]="position.status ==38">Художник по гриму</option>
+          <option [value]="39" [selected]="position.status ==39">Ассистент художника по гриму</option>
+          <option [value]="40" [selected]="position.status ==40">Гример</option>
+          <option [value]="41" [selected]="position.status ==41">Постижист</option>
+          <option [value]="42" [selected]="position.status ==42">Стилист</option>
+          <option [value]="43" [selected]="position.status ==43">Художник по костюму</option>
+          <option [value]="44" [selected]="position.status ==44">Ассистент художника по костюму</option>
+          <option [value]="45" [selected]="position.status ==45">Костюмер</option>
+          <option [value]="46" [selected]="position.status ==46">Оператор квадрокоптера</option>
+          <option [value]="47" [selected]="position.status ==47">Пиротехник</option>
+          <option [value]="48" [selected]="position.status ==48">Каскадер</option>
+          <option [value]="49" [selected]="position.status ==49">Кастинг-директор</option>
+          <option [value]="50" [selected]="position.status ==50">Кастинг-менеджер</option>
+          <option [value]="51" [selected]="position.status ==51">Режиссер по планированию</option>
+          <option [value]="52" [selected]="position.status ==52">Начальник транспортного цеха</option>
+          <option [value]="53" [selected]="position.status ==53">Юрист</option>
+          <option [value]="54" [selected]="position.status ==54">Бухгалтер</option>
+          <option [value]="55" [selected]="position.status ==55">Экономист</option>
+          <option [value]="56" [selected]="position.status ==56">Офис-менеджер</option>
+          <option [value]="57" [selected]="position.status ==57">Композитор</option>
+          <option [value]="58" [selected]="position.status ==58">Режиссер монтажа</option>
+          <option [value]="59" [selected]="position.status ==59">Монтажер</option>
+          <option [value]="60" [selected]="position.status ==60">Финансовый директор</option>
+          <option [value]="61" [selected]="position.status ==61">Кейтеринг служба</option>
+          <option [value]="62" [selected]="position.status ==62">PR-менеджер</option>
+          <option [value]="63" [selected]="position.status ==63">Технический директор</option>
+          <option [value]="64" [selected]="position.status ==64">Клипмейкер</option>
+          <option [value]="65" [selected]="position.status ==65">Координатор спецэффектов</option>
+          <option [value]="66" [selected]="position.status ==66">Колорист</option>
+          <option [value]="67" [selected]="position.status ==67">Сценарист</option>
+
+        </select><br>
 
       </div>
       <div class="select-box">
 
-        <label for="select-box1" class="label select-box1"><span class="label-desc">Занятость</span> </label>
-        <select id="select-box1" class="select">
-          <option value="Choice 1">Занят</option>
-          <option value="Choice 2">Свободен</option>
-        </select>
+        <!--<label for="select-box1" class="label select-box1"><span class="label-desc">Занятость</span> </label>-->
+        <!--<select id="select-box1" class="select">-->
+          <!--<option value="Choice 1">Занят</option>-->
+          <!--<option value="Choice 2">Свободен</option>-->
+        <!--</select>-->
 
+        <select formControlName="freeOrBusy" [(ngModel)]="busy.status">
+          <option [value]="111" [selected]="busy.status ==111">Все</option>
+          <option [value]="0" [selected]="busy.status ==0">Свободен</option>
+          <option [value]="1" [selected]="busy.status ==1">Занят</option>
+        </select><br>
+
+        <input type="submit" class="btn-submit" value="Поиск">
       </div>
 
     </form>
 
 
-    <div class="user"  *ngFor="let user of users">
+    <div class="user"  *ngFor="let user of filteredUsers1">
 
       <div class="avatar avatar-red" [ngStyle]="{'box-shadow': user.freeOrBusy == 0 ? '0px 0px 10px #de0303' : '0px 0px 10px #25bb1b'}"  routerLink="/separate-people" (click)="goUser(user)">
         <img [src]="'data:image/jpg;base64,'+ user.avatar" style="height:100%;width:100%">
