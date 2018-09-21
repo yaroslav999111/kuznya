@@ -23,6 +23,7 @@ import { AdvComponent } from './pages/adv/adv.component';
 import { RoolesComponent } from './pages/rooles/rooles.component';
 import {ProjectsService} from "../services/projects.service";
 import {UsersService} from "../services/users.service";
+import { ReestablishComponent } from './reestablish/reestablish.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import {UsersService} from "../services/users.service";
     OwnProfileComponent,
     ContactsComponent,
     AdvComponent,
-    RoolesComponent
+    RoolesComponent,
+    ReestablishComponent
   ],
   imports: [
     BrowserModule,

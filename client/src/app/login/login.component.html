@@ -3,11 +3,12 @@
     <div class="div-login" *ngIf="!correctLogin">
       <img src="../../assets/imgs/login.png">
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <input type="text" formControlName="email"  placeholder="Email">
+        <input type="email" formControlName="email"  placeholder="Email">
         <input formControlName="password" class="password-in" type="password" placeholder="Пароль">
         <div class="right-value" *ngIf="correctForm"><span>Пожалуйста, введите Ваши данные верно</span></div>
         <input type="submit" class="btn-submit" value="Вход">
-        <a routerLink="/registration">Регистрация</a>
+        <a routerLink="/registration">Регистрация</a><br>
+        <a routerLink="/reestablish">Восстановить пароль</a>
       </form>
     </div>
     <div class="success" *ngIf="correctLogin">

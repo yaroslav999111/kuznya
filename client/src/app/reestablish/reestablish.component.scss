@@ -3,7 +3,7 @@ body {padding: 0px;
   margin:0px;
   font-family: 'Roboto', sans-serif;}
 
-.main {    min-height: 100vh;}
+
 /*----- HEADER,FOOTER,MAIN -------*/
 /* Контейнер */
 .container {
@@ -43,27 +43,7 @@ body {padding: 0px;
 .menu a:hover {
   box-shadow: 0px 2px 9px #000;
 }
-.success {
-  font-size: 30px;
-  color: darkolivegreen;
-  text-align: center;
-  height: 500px;
-  line-height: 500px;
-}
-.password-in {
-  width: 97%;
-  background: #ffffff;
-  padding: 3px;
-  font-size: 17px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  color: #000;
-  margin-top: 6px;
-}
 
-.btn-submit {
-  cursor: pointer;
-}
 /* Карусель рекламы */
 .carousel{ background:#e8e8e8;}
 .carousel img {width: 100%;}
@@ -269,14 +249,6 @@ body {padding: 0px;
   border: 1px solid #ccc;
   color: #000;
   margin-top: 6px;}
-.div-login form input[type=email] { width: 97%;
-  background: #ffffff;
-  padding: 3px;
-  font-size: 17px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  color: #000;
-  margin-top: 6px;}
 .div-login form input[type=submit] {    width: 100%;
   background: #33427d;
   padding: 6px;
@@ -286,3 +258,36 @@ body {padding: 0px;
   color: #f6f6f6;
   margin-top: 6px;}
 .div-login a {text-decoration: none;}
+
+.email__input {
+  width: 97%;
+  background: #ffffff;
+  padding: 3px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-top: 6px;
+}
+/* Страница регистрации */
+.reestablish {width: 300px;text-align: center;}
+.reestablish img{ width: 100%; }
+.reestablish  input[type=email] { width: 97%;
+  background: #ffffff;
+  padding: 3px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-top: 6px;}
+.reestablish  input[type=submit] {    width: 100%;
+  background: #33427d;
+  padding: 6px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #f6f6f6;
+  margin-top: 6px;}
+.reestablish a {text-decoration: none;}
+.main {    min-height: 100vh;}
+

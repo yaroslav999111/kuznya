@@ -15,6 +15,7 @@ import { OwnProfileComponent} from "./own-profile/own-profile.component";
 import { AdvComponent} from "./pages/adv/adv.component";
 import { RoolesComponent} from "./pages/rooles/rooles.component";
 import { ContactsComponent} from "./pages/contacts/contacts.component";
+import { ReestablishComponent} from "./reestablish/reestablish.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'main', pathMatch: 'full'},
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'profile', component: OwnProfileComponent},
   { path: 'adv', component: AdvComponent},
   { path: 'contacts', component: ContactsComponent},
-  { path: 'rooles', component: RoolesComponent}
+  { path: 'rooles', component: RoolesComponent},
+  { path: 'reestablish', component: ReestablishComponent}
 ];
 
 
