@@ -44,9 +44,20 @@ export class OwnProfileComponent implements OnInit {
   constructor(public loginService: LoginService, public projectsService: ProjectsService) { }
 
   ngOnInit() {
-   this.profileInformation = this.loginService.currentUserInformation.value;
-   this.checkForAvatar();
-   this.getMyProjects();
+    this.getUserProfile();
+   // this.profileInformation = this.loginService.currentUserInformation.value;
+   // this.checkForAvatar();
+   // this.getMyProjects();
+  }
+
+  getUserProfile() {
+   let userId = localStorage.getItem('userEmail');
+    this.loginService.getUserDetailsById(userId).subscribe(data => {
+      this.profileInformation = data;
+      this.loginService.currentUserInformation.next(data);
+      this.checkForAvatar();
+      this.getMyProjects();
+    })
   }
 
   checkForAvatar() {

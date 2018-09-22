@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
+var ObjectId = require('mongoose').Types.ObjectId;
+
 
 // mongoose.connect('mongodb:localhost/allUsers2');
 //
@@ -41,6 +43,9 @@ const userSchema = new Schema({
         type: String
     },
     avatar: {
+        type: String
+    },
+    _id: {
         type: String
     }
 
@@ -163,6 +168,18 @@ module.exports.getUserByEmail = userSchema.statics.authenticate = function(newUs
             });
 
 
+};
+
+module.exports.getUserByIds = function(newUser, callback) {
+    // var ObjectId = new ObjectId(newUser._id);
+    User.findOne({ "email": newUser.email }, function(err, user ){
+        if(err) {
+            return callback(err);
+        } else {
+            console.log(user);
+            return callback(null, user);
+        }
+    });
 };
 
 module.exports.getUserById = function(id, callback) {

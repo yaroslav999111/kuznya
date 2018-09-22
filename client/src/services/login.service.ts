@@ -24,6 +24,8 @@ export class LoginService implements OnInit {
       });
   }
 
+
+
   addUser(user: any): Observable<any> {
     return this.http.post('/api/addUser', {username: user.username, password: user.password})
       .map((res: Response) => {
@@ -40,6 +42,14 @@ export class LoginService implements OnInit {
 
   loginUser(user: any): Observable<any> {
     return this.http.post(this.mainUrl + 'login', {email: user.email, password: user.password})
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
+  getUserDetailsById(userId: any): Observable<any> {
+    console.log(userId);
+    return this.http.post(this.mainUrl + 'login/getUserByIds', {email: userId})
       .map((res: Response) => {
         return res;
       });

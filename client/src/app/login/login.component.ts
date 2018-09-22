@@ -22,6 +22,11 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.checkForOnline();
+  }
+
+  checkForOnline() {
+      console.log(localStorage.getItem('userEmail'));
   }
 
   onSubmit() {
@@ -32,7 +37,8 @@ export class LoginComponent implements OnInit {
       } else if (!data.status) {
         this.loginService.currentUser.next({name: data['username']});
         this.loginService.currentUserInformation.next(data);
-
+        localStorage.setItem('userEmail', data['email']);
+        localStorage.setItem('username', data['username']);
         this.correctForm = false;
         this.correctLogin = true;
         // setTimeout(function() {this.router.navigate(['main']) }, 3000);

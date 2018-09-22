@@ -23,4 +23,17 @@ router.post('/', function(req, res, next) {
 
 });
 
+router.post('/getUserByIds', function(req, res, next) {
+    var newUser = new User({
+        email: req.body.email
+    });
+
+    User.getUserByIds(newUser, function(err, user, next) {
+        if(err) res.send(err);
+        else {
+            res.json(user);
+        }
+    });
+});
+
 module.exports = router;

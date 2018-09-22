@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AuthGuard} from "../services/auth-guard.service";
 import {AuthService} from "../services/auth.service";
 import {LoginService} from "../services/login.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -13,23 +14,26 @@ export class AppComponent implements OnInit {
   userName: any;
 
   ngOnInit() {
-    this.authGuard.userIsLogin.subscribe(data => {
-      if (data['isLogin'] === 'false'){
-        this.isOnline = false;
-      } else {
-        this.isOnline = true;
-      }
-    });
-
-    this.loginService.currentUser.subscribe(data => {
-      this.userName = data['name'];
-    });
+      this.check();
   }
+
+  check() {
+    this.authGuard.userIsLogin.subscribe(data => {
+      if (data['isLogin'] === 'false' && !localStorage.getItem('userEmail')){
+      this.isOnline = false;
+    } else {
+      this.isOnline = true;
+        this.userName = localStorage.getItem('username');
+    }
+  });
+}
+
 
   logouts() {
     this.isOnline = false;
-
+    localStorage.clear();
+    this.router.navigate(['login']);
   }
 
-  constructor(public authGuard: AuthService,  public loginService: LoginService) {}
+  constructor(public authGuard: AuthService,  public loginService: LoginService, public router: Router) {}
 }

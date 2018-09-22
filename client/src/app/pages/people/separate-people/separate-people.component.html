@@ -25,6 +25,24 @@
       <p>{{userDetails?.about}}
       </p>
 
+      <div class="raiting">
+        Рейтинг:
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <select formControlName="position" [(ngModel)]="position.status" >
+            <option [selected]="position.status ==1" value="1">1</option>
+            <option [selected]="position.status ==2" value="2">2</option>
+            <option [selected]="position.status ==3" value="3">3</option>
+            <option [selected]="position.status ==4" value="4">4</option>
+            <option [selected]="position.status ==5" value="5">5</option>
+            <option [selected]="position.status ==6" value="6">6</option>
+            <option [selected]="position.status ==7" value="7">7</option>
+            <option [selected]="position.status ==8" value="8">8</option>
+            <option [selected]="position.status ==9" value="9">9</option>
+            <option [selected]="position.status ==10" value="10">10</option>
+          </select>
+          <button type="submit">Проголосовать</button>
+       </form>
+      </div>
 
     </div>
 
