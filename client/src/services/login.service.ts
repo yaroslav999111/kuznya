@@ -17,22 +17,6 @@ export class LoginService implements OnInit {
 
   }
 
-  getUsers(): Observable<any> {
-    return this.http.get('/api/users')
-      .map((res: Response) => {
-        return res;
-      });
-  }
-
-
-
-  addUser(user: any): Observable<any> {
-    return this.http.post('/api/addUser', {username: user.username, password: user.password})
-      .map((res: Response) => {
-        return res;
-      })
-  }
-
   registerUser(user: any): Observable<any> {
     return this.http.post(this.mainUrl + 'register', {username: user. name, sname: user.sname, mobile: user.mobile, email: user.email, password: user.password})
       .map((res: Response) => {
@@ -57,6 +41,13 @@ export class LoginService implements OnInit {
 
   updateUser(user: any): Observable<any> {
     return this.http.post(this.mainUrl + 'register/update', user)
+      .map((res: Response) => {
+        return res;
+      });
+  }
+
+  addRating(user: any): Observable<any> {
+    return this.http.post(this.mainUrl + 'login/addRating', {email: user.email, rating: user.rating})
       .map((res: Response) => {
         return res;
       });

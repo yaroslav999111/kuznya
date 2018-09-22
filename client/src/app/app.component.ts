@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
   logouts() {
     this.isOnline = false;
     localStorage.clear();
+    this.authGuard.userIsLogin.next({'isLogin': 'false'});
     this.router.navigate(['login']);
   }
 

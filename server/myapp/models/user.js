@@ -45,7 +45,7 @@ const userSchema = new Schema({
     avatar: {
         type: String
     },
-    _id: {
+    rating: {
         type: String
     }
 
@@ -122,6 +122,41 @@ module.exports.updateUser = function(updateUser, callback) {
        }
     })
 
+};
+
+
+module.exports.addRating = function(updateUser, callback) {
+
+    var updateUserNewCheckedData;
+
+    User.findOne({email: updateUser.email}, function(err, user, doc) {
+        if (err) {
+            console.log(err);
+        } else {
+            addRating(user, updateUser);
+        }
+
+        function addRating(user, updateUser) {
+            if(!user.rating) {
+                updateUserNewCheckedData = {rating: updateUser.rating}
+            } else {
+                updateUserNewCheckedData = {rating: user.rating + ', ' + updateUser.rating};
+            }
+
+            User.findOneAndUpdate({email: updateUser.email}, {
+
+                $set: updateUserNewCheckedData
+
+            }, {new: true}, function(err, user, doc){
+                if(err) {
+                    return callback(err);
+                } else {
+                    return callback(null, user);
+                }
+            })
+        }
+
+    })
 };
 
 

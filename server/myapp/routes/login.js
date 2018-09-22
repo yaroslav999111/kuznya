@@ -36,4 +36,18 @@ router.post('/getUserByIds', function(req, res, next) {
     });
 });
 
+router.post('/addRating', function(req, res, next) {
+    var newUser = new User({
+        email: req.body.email,
+        rating: req.body.rating
+    });
+
+    User.addRating(newUser, function(err, user, next) {
+        if(err) res.send(err);
+        else {
+            res.json(user);
+        }
+    });
+});
+
 module.exports = router;
