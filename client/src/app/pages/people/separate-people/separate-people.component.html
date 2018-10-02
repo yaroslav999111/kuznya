@@ -14,7 +14,29 @@
       <p><span>Email:</span> {{userDetails?.email}}</p>
       <p><span>Сайт:</span> {{userDetails?.site}}</p>
       </div>
-	  <div class="buttons-form"> <form><input type="submit" value="Написать сообщение"></form><form><input type="submit" value="Добавить в избранное"></form> </div>
+	  <div class="buttons-form"> <form><label for="popupCheckboxOne" class="popup-shower">Отправить сообщение</label></form><form><input type="submit" class="popup-shower" value="Добавить в избранное"></form></div>
+    <!-- Начало всплвающего окна  -->
+
+      <div class="popup-wrapper">
+        <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+        <div class="popup">
+          <div class="popup-content">
+            <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+            <!-- Форма для отправки сообщения -->
+            Отправить сообщение пользователю:
+            <form>
+              <input type="text" value="123" hidden>
+              <textarea>
+              </textarea>
+              <input type="submit" value="Отправить">
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
 
