@@ -24,11 +24,10 @@
             <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
             <!-- Форма для отправки сообщения -->
             Отправить сообщение пользователю:
-            <form>
-              <input type="text" value="123" hidden>
-              <textarea>
+            <form class="form-for-email" [formGroup]="emailForm" (ngSubmit)="sendEmail()">
+              <textarea type="text" formControlName="message">
               </textarea>
-              <input type="submit" value="Отправить">
+              <input type="submit"  value="Отправить">
             </form>
 
 

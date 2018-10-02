@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var Projects = require('../models/projects');
+var nodemailer = require('nodemailer');
+
 
 router.get('/', function(req, res, next) {
     res.send('register works fine');
@@ -40,6 +42,47 @@ router.post('/update', function(req, res, next) {
     });
 
 });
+
+
+
+router.post('/sendemail', function(req, res, next) {
+
+    var name = req.body.name;
+    var sname = req.body.sname;
+    var emailFromAdress = req.body.email;
+    var textMessage = req.body.message;
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'kuznya911911@gmail.com',
+            pass: '123123123QQQ'
+        }
+    });
+
+    const mailOptions = {
+        from: 'sende23123r@email.com', // sender address
+        to: req.body.emailTo, // list of receivers
+        subject: 'Доброго времени суток!', // Subject line
+        html: req.body.message + '<p>С Уважением,</p>' +
+        + '' + req.body.name + '' + req.body.sname + '' + req.body.email // plain text body
+    };
+
+    console.log(req.body);
+
+
+    transporter.sendMail(mailOptions, function (err, info) {
+        if(err)
+            res.send(err);
+        else
+            res.send(info);
+    });
+
+
+});
+
+
+
 
 router.post('/getMyProjects', function(req, res, next) {
     var email = {email: req.body.email};

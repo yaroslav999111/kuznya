@@ -32,7 +32,6 @@ export class LoginService implements OnInit {
   }
 
   getUserDetailsById(userId: any): Observable<any> {
-    console.log(userId);
     return this.http.post(this.mainUrl + 'login/getUserByIds', {email: userId})
       .map((res: Response) => {
         return res;

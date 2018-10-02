@@ -52,6 +52,28 @@ export class SeparatePeopleComponent implements OnInit {
     this.howMuchStars();
   }
 
+
+  emailForm = new FormGroup({
+    email: new FormControl(''),
+    message: new FormControl('')
+  });
+
+
+  sendEmail() {
+    const userData = {name: '', sname: '', email: '', message: this.emailForm.value.message, emailTo: this.userDetails.email};
+
+    this.loginService.currentUserInformation.subscribe(data => {
+      userData.name = localStorage.getItem('username');
+      userData.sname = data['sname'];
+      userData.email = localStorage.getItem('userEmail');
+    });
+
+    this.userService.sendEmail(userData).subscribe(data => {
+      console.log(data, 'lalal');
+    });
+
+  }
+
   howMuchStars() {
     switch (this.myRating) {
       case undefined : this.greenColor = '' ; this.blackColor = '★★★★★★★★★★';

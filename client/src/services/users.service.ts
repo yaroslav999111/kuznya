@@ -9,7 +9,7 @@ export class UsersService implements OnInit {
   mainUrl: string = 'http://localhost:3333/';
 
   userDetails = new BehaviorSubject({});
-
+  positionInCompany = new BehaviorSubject({});
   constructor(public http: HttpClient) {
   }
 
@@ -24,6 +24,12 @@ export class UsersService implements OnInit {
       });
   }
 
+  sendEmail(userData: any) {
+    return this.http.post(this.mainUrl + 'projects/sendemail', {email: userData.email, name: userData.name, sname: userData.sname, message: userData.message, emailTo: userData.emailTo})
+      .map((res: Response) => {
+        return res;
+      });
+  }
 
 
 }
