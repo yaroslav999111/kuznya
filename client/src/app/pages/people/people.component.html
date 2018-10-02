@@ -9,12 +9,8 @@
 
       <div class="select-box">
 
-        <!--<label for="select-box1" class="label select-box1"><span class="label-desc">Должность</span> </label>-->
-        <!--<select id="select-box1" class="select">-->
-          <!--<option value="Choice 1">Кинооператор</option>-->
-          <!--<option value="Choice 2">Звукорежисер</option>-->
-          <!--<option value="Choice 3">Стилист</option>-->
-        <!--</select>-->
+        
+
 
         <select formControlName="freeOrBusy" [(ngModel)]="position.status">
           <option [value]="111" [selected]="position.status ==111">Все</option>
@@ -92,11 +88,7 @@
       </div>
       <div class="select-box">
 
-        <!--<label for="select-box1" class="label select-box1"><span class="label-desc">Занятость</span> </label>-->
-        <!--<select id="select-box1" class="select">-->
-          <!--<option value="Choice 1">Занят</option>-->
-          <!--<option value="Choice 2">Свободен</option>-->
-        <!--</select>-->
+       
 
         <select formControlName="freeOrBusy" [(ngModel)]="busy.status">
           <option [value]="111" [selected]="busy.status ==111">Все</option>

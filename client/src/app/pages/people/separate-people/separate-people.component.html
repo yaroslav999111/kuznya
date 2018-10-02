@@ -8,11 +8,13 @@
 
     <div class="info-main">
       <div class="info-main-name"><h1>{{userDetails?.username}}  {{userDetails?.sname}} </h1>  <span class="starr"><b>{{greenColor}}</b>{{blackColor}}</span> </div>
-      <h4>{{userDetails?.position}}</h4>
+      <!--<h4>{{userDetails?.position}}</h4>-->
+	  <div class="phone-people">
       <p><span>Моб.тел:</span> {{userDetails?.mobile}}</p>
       <p><span>Email:</span> {{userDetails?.email}}</p>
       <p><span>Сайт:</span> {{userDetails?.site}}</p>
-
+      </div>
+	  <div class="buttons-form"> <form><input type="submit" value="Написать сообщение"></form><form><input type="submit" value="Добавить в избранное"></form> </div>
     </div>
 
 
