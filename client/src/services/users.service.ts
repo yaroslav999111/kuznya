@@ -6,7 +6,7 @@ import {BehaviorSubject} from 'rxjs';
 
 @Injectable()
 export class UsersService implements OnInit {
-  mainUrl: string = 'http://localhost:3333/';
+  mainUrl: string = 'http://35.232.84.79:3000/';
 
   userDetails = new BehaviorSubject({});
   positionInCompany = new BehaviorSubject({});

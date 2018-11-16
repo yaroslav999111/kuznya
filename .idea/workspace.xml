@@ -2,73 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5ac74e6-9be4-4d57-8e07-4efb056fb76c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.angular-cli.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/e2e/app.e2e-spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/e2e/app.po.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/protractor.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/casts/casts.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/news/news.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/avatar.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/info-all-ico.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/logos.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/img/my-project-ico.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/people/people.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/projects/projects.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/rental/rental.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/registration/registration.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth-guard.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/services/login.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/tsconfig.app.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/tsconfig.spec.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/typings.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -82,7 +16,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/myapp/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/services/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth-guard.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/services/auth-guard.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/services/login.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -108,6 +89,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/myapp/node_modules" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -130,8 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,16 +122,47 @@
               <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuznya" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuznya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuznya" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../deko-group/dekogroup" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -181,25 +195,28 @@
       <updated>1527521300617</updated>
       <workItem from="1527521303105" duration="2221000" />
       <workItem from="1527524234316" duration="37000" />
+      <workItem from="1541599384988" duration="169000" />
+      <workItem from="1541599593961" duration="916000" />
+      <workItem from="1542024831277" duration="491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2258000" />
+    <option name="totallyTimeSpent" value="3834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -222,6 +239,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/myapp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/login.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/casts/casts.component.css" />
     <entry file="file://$PROJECT_DIR$/src/app/pages/news/news.component.css" />
     <entry file="file://$PROJECT_DIR$/src/app/pages/people/people.component.css" />
@@ -237,5 +292,43 @@
     <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/registration/registration.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/registration/registration.component.html" />
+    <entry file="file://$PROJECT_DIR$/client/src/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/login.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/myapp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

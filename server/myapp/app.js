@@ -12,7 +12,7 @@ var projects = require('./routes/projects');
 // additional apps
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/kuznya");
+mongoose.connect("mongodb://35.232.84.79:27017/kuznya");
 var db = mongoose.connection;
 
 var app = express();
@@ -46,7 +46,7 @@ app.use('/projects', projects);
 app.use(function(req, res, next) {
   next(createError(404));
 });
-app.listen(3333);
+app.listen(3000);
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
