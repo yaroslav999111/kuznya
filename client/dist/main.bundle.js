@@ -1822,7 +1822,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var LoginService = /** @class */ (function () {
     function LoginService(http) {
         this.http = http;
-        this.mainUrl = 'http://35.232.84.79:3000/';
+        this.mainUrl = 'https://kuznya-server.herokuapp.com/';
         this.currentUser = new __WEBPACK_IMPORTED_MODULE_3_rxjs__["BehaviorSubject"]({});
         this.currentUserInformation = new __WEBPACK_IMPORTED_MODULE_3_rxjs__["BehaviorSubject"]({});
     }
@@ -1907,7 +1907,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ProjectsService = /** @class */ (function () {
     function ProjectsService(http) {
         this.http = http;
-        this.mainUrl = 'http://35.232.84.79:3000/';
+        this.mainUrl = 'https://kuznya-server.herokuapp.com/';
         this.moreProject = new __WEBPACK_IMPORTED_MODULE_3_rxjs__["BehaviorSubject"]({});
     }
     ProjectsService.prototype.ngOnInit = function () {
@@ -1967,7 +1967,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var UsersService = /** @class */ (function () {
     function UsersService(http) {
         this.http = http;
-        this.mainUrl = 'http://35.232.84.79:3000/';
+        this.mainUrl = 'https://kuznya-server.herokuapp.com/';
         this.userDetails = new __WEBPACK_IMPORTED_MODULE_3_rxjs__["BehaviorSubject"]({});
         this.positionInCompany = new __WEBPACK_IMPORTED_MODULE_3_rxjs__["BehaviorSubject"]({});
     }
