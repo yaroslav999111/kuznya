@@ -2,3 +2,11 @@
   margin: auto;
   width: 980px;}
 .main {    min-height: 100vh;}
+@media (max-width: 600px) {
+
+.main-banner {width:100%;}
+.container {width:100%;}
+.main-left-info, .main-right-info {width:100%;}
+.search img {width: 250px;}
+.menu a {margin: 0px; }
+}

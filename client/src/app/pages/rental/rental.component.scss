@@ -260,3 +260,11 @@ body {padding: 0px;
   margin-top: 6px;}
 .div-login a {text-decoration: none;}
 .main {    min-height: 100vh;}
+@media (max-width: 600px) {
+
+.main-banner {width:100%;}
+.container {width:100%;}
+.main-left-info, .main-right-info {width:100%;}
+.search img {width: 250px;}
+.menu a {margin: 0px; }
+}

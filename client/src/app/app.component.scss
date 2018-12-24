@@ -271,3 +271,17 @@ padding: 0px;}
 .main {    min-height: 100vh;}
 
 .i1 {width:20px!important;}
+
+
+@media (max-width: 600px) {
+
+.main-banner {width:100%;}
+.container {width:100%;}
+.main-left-info, .main-right-info {width:100%;}
+.search img {width: 250px;}
+.menu a {margin: 0px; }
+.search form input {width: 330px;}
+.search form {    width: 100%;}
+.search {    padding: 5px;}
+}
+

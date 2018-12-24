@@ -280,3 +280,10 @@ body {padding: 0px;
 }
 .main-left-info p {font-size: 15px;}
 .main {    min-height: 100vh;}
+
+@media (max-width: 600px) {
+
+.main-banner {width:100%;}
+.container {width:100%;}
+.main-left-info, .main-right-info {width:90%;}
+}
