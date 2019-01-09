@@ -274,7 +274,9 @@ padding: 0px;}
 
 
 @media (max-width: 600px) {
-
+.search {
+	padding: 0px;
+}
 .main-banner {width:100%;}
 .container {width:100%;}
 .main-left-info, .main-right-info {width:100%;}

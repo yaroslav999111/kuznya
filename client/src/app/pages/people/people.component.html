@@ -5,7 +5,7 @@
         <img src="../../../assets/imgs/logos.png">
       </div>
     </div>
-    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <form class="people-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
 
       <div class="select-box">
 
@@ -94,9 +94,9 @@
           <option [value]="111" [selected]="busy.status ==111">Все</option>
           <option [value]="0" [selected]="busy.status ==0">Свободен</option>
           <option [value]="1" [selected]="busy.status ==1">Занят</option>
-        </select><br>
+        </select>
 
-        <input type="submit" class="btn-submit" value="Поиск">
+    <input type="submit" class="btn-submit" value="Поиск">
       </div>
 
     </form>

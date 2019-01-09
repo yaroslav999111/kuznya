@@ -219,8 +219,19 @@ body {padding: 0px;
   color: #f6f6f6;
   margin-top: 6px;}
 .div-login a {text-decoration: none;}
-@media (max-width: 600px) {
 
+
+.people-form select {
+   background: transparent;
+   padding: 5px;
+   font-size: 16px;
+	background: none repeat scroll 0 0 #33427d;
+    border: 1px solid #ffffff;
+}
+
+
+@media (max-width: 600px) {
+.search {padding: 0px;}
 .main-banner {width:100%;}
 .container {width:100%;}
 .main-left-info, .main-right-info {width:100%;}

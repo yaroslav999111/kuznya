@@ -267,3 +267,13 @@ body {padding: 0px;
 .search img {width: 250px;}
 .menu a {margin: 0px; }
 }
+
+@media (max-width: 600px) {
+.d3 {
+	width: 100%;
+}
+.d3 form {
+	width: 100%;
+}
+}
+
